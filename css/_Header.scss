@@ -1,0 +1,96 @@
+
+
+header{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    border-right: 10px solid rgb(238, 238, 238);
+    
+    #perfil{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(252, 252, 252);
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+
+        #foto{
+            margin-left: 3%;
+            display: inline-block;
+            width: 60px;
+            margin-right: 15px;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 100%;
+            padding: 3px;
+            img{
+                border-radius: 100px;
+            }
+        }
+        #corpo-nome{
+            display: inline-block;
+
+            h5{
+                font-family: 'Roboto', sans-serif;
+                color: rgb(153, 153, 153);
+            }
+            #nome{
+                font-family: 'Roboto', sans-serif;
+                font-weight: bolder;
+            }
+        }
+        #incone-alerta{
+            margin-top: 25px;
+            margin-left: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    }
+    nav{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 30px;
+        width: 100%;
+
+        ul{
+            width: 100%;
+            
+            a{
+                text-decoration: none;
+                display: block;             
+                padding-left: 28px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                list-style: none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+        
+                span{
+                    color: rgb(99, 99, 99);
+                    display: inline-block;
+                    margin: 0 3px;
+                }
+                &:hover{
+                    text-decoration: none;
+                    background: rgb(235, 235, 235);
+                }
+            }
+            #incone-lateral{
+                margin-right: 8px;
+                margin-top: 7px;
+                font-size: 20px;
+            }
+        }
+        #titulo-configuracao{
+            padding-left: 25px;
+            font-size: 13px;
+            color: rgb(99, 99, 99);
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    
+}

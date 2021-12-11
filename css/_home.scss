@@ -1,0 +1,114 @@
+#header-main-home{
+    width: 100%;
+    background: #fff;
+    height: 85px;
+    padding: 20px;
+    #incone{
+        font-size: 18px;
+    }
+}
+#link-cardapio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 120px;
+    width: 170px;
+
+    span{
+        font-family: 'Poppins', sans-serif;
+        margin: 0 5px;
+        font-size: 15px;
+    }
+}
+
+#header-main-painel{
+    margin-top: 2px;
+    width: 100%;
+    background: #fff;
+    height: 180px;
+    padding: 20px;
+    position: relative;
+
+    .conainer{
+        display: inline-block;
+        width: 300px;
+        height: 100%;
+        border-radius: 3px;
+        background: rgb(201, 201, 201);
+        // border: 3px solid rgb(228, 228, 228);
+        position: relative;
+        .descricao{
+            font-weight: bolder;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .quantidade{
+            margin-right: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #pedidos{
+            color: rgb(0, 0, 0);
+        }
+        #cliente{
+            color: rgb(0, 0, 0);
+        }
+        #produtos{
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    #main-graficos-historico-pedido{
+        height: 500px;
+    }
+
+}
+
+#main-graficos-historico-pedido{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+
+    @media (max-width: 1366px) { 
+        #historico-pedidos{
+            height: 460px;
+        }
+    }
+    
+    @media (min-width: 1367px) { 
+        #historico-pedidos{
+            height: 700px;
+        }
+    }
+    
+    #graficos{
+        padding: 20px;
+        width: 75%;
+        background: #fff;
+        border-radius: 5px;
+        border: 2px solid rgb(214, 214, 214);
+    }
+    #historico-pedidos{
+        width: 400px;
+        overflow-y: scroll;
+        margin-left: 25px;
+        
+        padding: 18px;
+        border-radius: 5px;
+        border: 2px solid rgb(221, 221, 221);
+        
+        
+        #perfil-pedido{
+            margin-right: 15px;
+        }
+        
+        
+    }
+    
+}

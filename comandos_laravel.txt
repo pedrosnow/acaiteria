@@ -1,0 +1,9 @@
+Comandos
+composer dump-autoload 
+//Comando utilizado para geração de arquivos load pro casod o erro 39 na execução do Xampp
+
+composer install
+//Comando para instalação do Composer na pasta raiz do projeto.
+
+php artisan optimize:clear
+// Caso aparceo problema de Header ou Post

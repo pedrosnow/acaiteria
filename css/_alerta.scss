@@ -1,0 +1,264 @@
+
+  #alerta-corpo{
+    width: 100%;
+    position:fixed;
+    top:10px;
+    z-index: 7;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+.sucesso{
+    background: #4E8D7C;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #004445;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sucesso.showsucesso{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sucesso.show{
+    animation: show_slide 1s ease forwards;
+  }
+  @keyframes show_slide {
+    0%{
+      transform: translateX(100%);
+    }
+    40%{
+      transform: translateX(-10%);
+    }
+    80%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-10px);
+    }
+  }
+  .sucesso.hide{
+    animation: hide_slide 1s ease forwards;
+  }
+  @keyframes hide_slide {
+    0%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0%);
+    }
+    80%{
+      transform: translateX(-10%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  .sucesso .fa-check-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #004445;
+    font-size: 30px;
+  }
+  .sucesso .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #004445;
+  }
+  .sucesso .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #004445;
+    padding: 20px 18px;
+    cursor: pointer;
+  }
+  .sucesso .close-btn:hover{
+    background: #002d2e;
+  }
+  .sucesso .close-btn .fas{
+    color: #2C786C;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+
+//aviso
+
+
+.aviso{
+    background: #ffdb9b;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #ffa502;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .aviso.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .aviso.show{
+    animation: show_slide 1s ease forwards;
+  }
+  @keyframes show_slide {
+    0%{
+      transform: translateX(100%);
+    }
+    40%{
+      transform: translateX(-10%);
+    }
+    80%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-10px);
+    }
+  }
+  .aviso.hide{
+    animation: hide_slide 1s ease forwards;
+  }
+  @keyframes hide_slide {
+    0%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0%);
+    }
+    80%{
+      transform: translateX(-10%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  .aviso .fa-exclamation-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ce8500;
+    font-size: 30px;
+  }
+  .aviso .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #ce8500;
+  }
+  .aviso .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffd080;
+    padding: 20px 18px;
+    cursor: pointer;
+  }
+  .aviso .close-btn:hover{
+    background: #ffc766;
+  }
+  .aviso .close-btn .fas{
+    color: #ce8500;
+    font-size: 22px;
+    line-height: 40px;
+  }
+  
+
+// erro
+
+
+.erro{
+    background: #CE1212;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #3D0000;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .erro.showerro{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .erro.show{
+    animation: show_slide 1s ease forwards;
+  }
+  @keyframes show_slide {
+    0%{
+      transform: translateX(100%);
+    }
+    40%{
+      transform: translateX(-10%);
+    }
+    80%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-10px);
+    }
+  }
+  .erro.hide{
+    animation: hide_slide 1s ease forwards;
+  }
+  @keyframes hide_slide {
+    0%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0%);
+    }
+    80%{
+      transform: translateX(-10%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  .erro .fa-times-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3D0000;
+    font-size: 30px;
+  }
+  .erro .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #3D0000;
+  }
+  .erro .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #3D0000;
+    padding: 20px 18px;
+    cursor: pointer;
+  }
+  .erro .close-btn:hover{
+    background: #2b0000;
+  }
+  .erro .close-btn .fas{
+    color: #950101;
+    font-size: 22px;
+    line-height: 40px;
+  }

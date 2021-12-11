@@ -1,0 +1,56 @@
+#corpo-tabela{
+    margin-top: 35px;
+}
+
+.corpo-pedido{
+    padding: 10px 30px;
+
+    overflow: hidden;
+    height: 100%;
+}
+.dados-pedidos{
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background: #0e470059;
+}
+.corpo-dados{
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.dados{
+   
+    margin: 10px 0;
+
+    .informacao{
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+.corpo-dados-informacoes{
+    
+   margin-right: 50px;
+}
+
+#corpo-tabela-pedido{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #0e470025;
+        text-align: left;
+        padding: 8px;
+      }
+      #total{
+          font-size: 25px;
+          margin-top: 30px;
+          margin-bottom: 20px;
+      }
+     
+}

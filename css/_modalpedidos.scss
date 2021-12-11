@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.containerModalViewShowRequest{
+    #closerModal{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 35px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    position: relative;
+    width: 1200px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .bodyScroll{
+        width: 70%;
+        height: 500px;
+        overflow-y: scroll;
+        margin: 15px;
+       
+        
+        .bodyRequest{
+            width: 97%;
+            background: rgba(0, 78, 0, 0.493);
+            border-radius: 5px;
+            padding: 20px;
+            
+            .headerTitleRequest{
+                font-size: 40px;
+                font-family: 'Raleway', sans-serif
+            }
+            .mainDice{
+                overflow: hidden;
+
+                .containerDice{
+                    float: left;
+                    margin-top: 20px;
+                    margin-right: 60px;
+                }
+                .titleDice{
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+            }
+            .bodytable{
+                width: 100%;
+                margin-top: 47px;
+                margin-bottom: 40px;
+
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                  }
+                  
+                  td, th {
+                    border: 1px solid #719471;
+                    text-align: left;
+                    padding: 8px;
+                  }
+                  
+                  
+            }
+            .totalRequest{
+                width: 100%;
+                font-size: 20px;
+           
+                .titleTotal{
+                    font-weight: bold;
+                }
+            }
+            .bodybtnprintout{
+                margin-top: 20px;
+            }
+           
+        }
+    }
+    .bodyScroll::-webkit-scrollbar {
+        width: 12px;              
+      }
+    .bodyScroll::-webkit-scrollbar-track{
+        background: rgb(255, 255, 255);        
+    }
+    .bodyScroll::-webkit-scrollbar-thumb {
+        background-color: rgb(216, 216, 216);   
+        border-radius: 20px;       
+        border: 3px solid rgb(255, 255, 255);  
+      }
+
+      .bodyOptions{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: column;
+          width: 40%;
+          height: 510px;
+          padding-right: 25px;
+
+          
+          .bodiIcons{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 10px 0;
+              width: 100%;
+              cursor: pointer;
+          }
+      }
+      
+     
+}

@@ -42,6 +42,7 @@ class ComplementoController extends Controller
     {
         
         $query =  Complemento::create([
+            
             'nome' => $request->complemento
         ]);
 

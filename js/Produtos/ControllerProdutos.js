@@ -23,7 +23,7 @@ class ControllerProdutos {
 
     chackeComplemento(){
         this.Complemento.addEventListener('click', ()=>{
-            if(this.Complemento.checked == true){
+            if(this.Complemento.checked == false){
                 this.qtd_complemento.disabled = true
             }else{
                 this.qtd_complemento.disabled = false

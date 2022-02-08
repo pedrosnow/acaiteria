@@ -22,7 +22,7 @@
                 </div>
                 <div class="sub-campos" id="corpo-complemento">
                     <label for="">Complemento</label>
-                    <input id="complemento"  type="checkbox" name="complemento">
+                    <input id="complemento"  type="checkbox" name="complemento" checked="checked">
                 </div>
                 <div class="sub-campos">
                     <label>Quantidade de complemento</label>

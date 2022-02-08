@@ -7,7 +7,7 @@
       <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name') }}</title>
 
 
     <!-- incones -->
@@ -59,7 +59,7 @@
     <header>
         <div id="perfil">
             <span id="foto">
-                <img src="https://scontent.fthe1-1.fna.fbcdn.net/v/t1.6435-9/122156642_3371201486327182_7731893899772429075_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFyq0iy-wrJNHTx_8LsNqokzL4ey8eVWv_Mvh7Lx5Va_8YbwQCpnZLAWwjJEzkmHpO4aJs09uFQfrrIl73PNVR3&_nc_ohc=R4VsO2dT_tYAX-aPRDh&tn=DMrfdFSCSExBBKvx&_nc_ht=scontent.fthe1-1.fna&oh=ca1d707a54984ab93726176c502ffdfa&oe=61A6B7EA"
+                <img src="./img/perfil.png"
                     width="100%">
             </span>
             <span id="corpo-nome">

@@ -34,6 +34,7 @@ Route :: get ('produtos/showAll' , 'ProdutoController@showAll');
 Route :: get ('produtos/' , 'ProdutoController@index');
 Route :: post ('produtos/deletar' , 'ProdutoController@deletar');
 Route :: post ('produtos/store' , 'ProdutoController@store');
+Route :: get ('pedidos/clientes' , 'Pedido_produto_usuario@getAllPedidos');
 
 
 Route::resource('produtos', ProdutoController::class);

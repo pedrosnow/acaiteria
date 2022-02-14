@@ -52,6 +52,10 @@ ENGINE=InnoDB
 ;
 
 
+ALTER TABLE `produto`
+	ADD COLUMN `volume` VARCHAR(255) NULL DEFAULT NULL AFTER `preco`,
+	ADD COLUMN `quantidade_complemento` INT NULL DEFAULT NULL AFTER `volume`;
+
 
 CREATE TABLE `pedido` (
 	`id_pedido` INT(10) NOT NULL AUTO_INCREMENT,
@@ -86,6 +90,9 @@ CREATE TABLE `pedido_produto_usuario` (
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
+
+ALTER TABLE `pedido_produto_usuario`
+	ADD COLUMN `updated_date` TIMESTAMP NULL AFTER `creation_date`;
 
 
 

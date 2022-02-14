@@ -2,6 +2,7 @@ class ControllerProdutos {
 
     constructor() {
 
+        this.corpoAlerta = document.getElementsByClassName('corpo-alerta')
         this.modal = document.getElementById('modal')
         this.formProdutos = document.getElementById('formProdutos')
         this.btnChackComplemento = document.getElementById('complemento')
@@ -17,7 +18,6 @@ class ControllerProdutos {
         this.btnAddProducts()
         this.chackboxComplemento()
         this.showAllProductsregistered()
-        this.preView()
         this.chackeComplemento()
     }
 
@@ -75,12 +75,10 @@ class ControllerProdutos {
                 processData: false,
                 success: dados => {
 
-                    console.log(dados)
-
                     this.name.value = ''
                     this.square.value = ''
                     this.complement.checked = false
-                    this.sucesso('Produto cadastrado')
+                    this.sucesso('Salvo com sucesso')
                     this.showAllProductsregistered()
                     this.file.src = '';
 
@@ -161,30 +159,7 @@ class ControllerProdutos {
 
     }
 
-    preView() {
 
-
-
-        this.file.addEventListener('change', (e) => {
-
-            var reander = new FileReader()
-
-            reander.onload = () => {
-
-                this.imgPreview.src = reander.result
-
-            }
-            if (this.file) {
-
-                reander.readAsDataURL(this.file.files[0])
-
-            } else {
-
-                this.file.src = 'img/prev.png'
-            }
-        })
-
-    }
 
     delete(id) {
 
@@ -230,39 +205,7 @@ class ControllerProdutos {
 
     sucesso(mensagem) {
 
-        $("#alerta-corpo").html(
-            `
-            <div class="sucesso hide" id="sucesso">
-            <span class="fas fa-check-circle"></span>
-            <span class="msg">${mensagem}</span>
-                <div class="close-btn">
-                    <span class="fas fa-times"></span>
-                </div>
-            </div>
-            `
-        );
-
-        $('#alerta-corpo').css({ display: 'flex' });
-
-        setTimeout(function () {
-            $('.sucesso').addClass("show");
-            $('.sucesso').removeClass("hide");
-            $('.sucesso').addClass("showsucesso");
-            setTimeout(function () {
-                $('.sucesso').removeClass("show");
-                $('.sucesso').addClass("hide");
-            }, 5000);
-
-        }, 1000);
-
-        $(".close-btn").click(function (e) {
-
-            $('.sucesso').removeClass("show");
-            $('.sucesso').addClass("hide");
-
-        });
-
-
+       $(".corpo-alerta").append(`<div class="alert alert-success">${mensagem}</div>`);
     }
 
 

@@ -2,6 +2,9 @@
 
 @section('content')
 
+<div class="corpo-alerta">
+    
+</div>
 <div id="corpo-produtos">
     <a id="linkComplemento" href="complemento/" class="btn btn-primary">Complementos</a>
     <div id="formulario-cadastrar-produtos">
@@ -47,11 +50,7 @@
                     </div>
                                      
                 </div>
-                <div class="sub-campos">
-                    <img src="img/prev.png" id="imgprev" width="100px">
-                </div>
-
-                <div class="sub-campos" id="corpo-salvar">
+                              <div class="sub-campos" id="corpo-salvar">
                     <button id="btn-salvar" class="btn btn-success">Salvar</button>
                 </div>
             </div>

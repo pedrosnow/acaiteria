@@ -32,7 +32,7 @@
             <form method="POST" action="{{ route('login') }}" id="formLogin">
                 @csrf
                 <div>
-                    <h3 id="titulo">Login</h3>
+                    <h3 id="titulo">Faça Login</h3>
                 </div>
                 <div class="corpo-input">
                 <li class="fas fa-user-alt incone" ></li>

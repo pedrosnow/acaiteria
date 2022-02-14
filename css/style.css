@@ -184,6 +184,93 @@ main {
           align-items: center;
 }
 
+h5 {
+  padding: 0 20px;
+  color: #9c00aa;
+  font-weight: bold;
+}
+
+#main-painel-app {
+  width: 100%;
+  padding: 0 20px;
+}
+
+#main-painel-app .painel {
+  border-radius: 5px;
+  border: 2px solid #d1d1d1;
+  padding: 10px;
+}
+
+#main-painel-app .painel #hrader-painel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-painel-app .painel #hrader-painel #titulo {
+  font-size: 20px;
+  color: #585858;
+}
+
+#main-painel-app .painel #hrader-painel #status {
+  font-weight: bold;
+  background: lightgray;
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+#main-painel-app .painel #hrader-painel .incone {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: green;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+#main-painel-app .painel #main-painel .mensagem-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-painel-app .painel #main-painel .mensagem-body div {
+  font-size: 15px;
+  font-weight: bold;
+  color: #585858;
+}
+
+#main-painel-app .painel #main-painel .mensagem-body button {
+  margin-top: 20px;
+  width: 200px;
+}
+
 header {
   width: 20%;
   height: 100%;
@@ -297,8 +384,13 @@ header nav #titulo-configuracao {
   margin-bottom: 20px;
 }
 
+.corpo-alerta {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
 #corpo-produtos {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 98%;
   border-radius: 5px;
   padding: 40px 10px 20px 10px;

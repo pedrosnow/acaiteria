@@ -28,6 +28,36 @@
 
 </section>
 
+<h5>PAINEL APLICATIVO</h5>
+<section id="main-painel-app">
+
+    <section class="painel">
+        
+        <div id="hrader-painel">
+
+            <span id="titulo"><strong>Status</strong></span>
+            <span id="status">Online <span class="incone"></span></span>
+
+        </div>
+        <hr>
+        <div id="main-painel">
+            <div class="mensagem-body">
+                <div>Aviso para os clientes</div>
+                <textarea name="" id="" cols="60" rows="10"></textarea>
+                <button class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+        <div id="footer-painel">
+
+
+        </div>
+
+
+    </section>
+
+
+</section>
+
 
 
     <script src="{{asset('js/Home/ControllerDashaBoard.js')}}"></script> 

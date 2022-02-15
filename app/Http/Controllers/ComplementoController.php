@@ -22,22 +22,16 @@ class ComplementoController extends Controller
         return view('complemento');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    
+    public function getAll()
     {
-        //
+
+        $query = Complemento::getAll();
+        return json_encode($query);
+        
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         
@@ -91,8 +85,9 @@ class ComplementoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $complemento = Complemento::De($request->id);
+        return json_encode($complemento);
     }
 }

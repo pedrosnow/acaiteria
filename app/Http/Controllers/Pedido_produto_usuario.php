@@ -17,6 +17,18 @@ class Pedido_produto_usuario extends Controller
         
         $pedidos = Pedidos::getAllPeidos();
         
+        
+        return json_encode($pedidos);
+        
+        
+
+    }
+
+   public function viewPeido(Request $request){
+
+
+        $pedidos = Pedidos::getAllPeidos($request->id);
+            
         $Dados = array();
         
         
@@ -24,16 +36,17 @@ class Pedido_produto_usuario extends Controller
             
             $complementoPeido = Pedidos::getAllComplementoPeido($value->id_produto);
 
-            array_push($Dados,  $value);
-            array_push($Dados,  $complementoPeido);
+            $pedido = array('pedido' => $value, 'complementos' => $complementoPeido);
+
+            array_push($Dados,  $pedido);
+        
 
         }
         
         
         return json_encode($Dados);
-        
-        
 
     }
+
 
 }

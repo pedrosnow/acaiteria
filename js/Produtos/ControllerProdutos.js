@@ -21,11 +21,11 @@ class ControllerProdutos {
         this.chackeComplemento()
     }
 
-    chackeComplemento(){
-        this.Complemento.addEventListener('click', ()=>{
-            if(this.Complemento.checked == false){
+    chackeComplemento() {
+        this.Complemento.addEventListener('click', () => {
+            if (this.Complemento.checked == false) {
                 this.qtd_complemento.disabled = true
-            }else{
+            } else {
                 this.qtd_complemento.disabled = false
             }
         })
@@ -205,7 +205,7 @@ class ControllerProdutos {
 
     sucesso(mensagem) {
 
-       $(".corpo-alerta").append(`<div class="alert alert-success">${mensagem}</div>`);
+        $(".corpo-alerta").append(`<div class="alert alert-success">${mensagem}</div>`);
     }
 
 

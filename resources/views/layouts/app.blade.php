@@ -31,7 +31,7 @@
     <!-- Scripts -->
 
     <script src="{{asset('fontawesome/css/all.css') }}" defer></script>
-    <script src="{{asset('node_modules/chart.js/dist/chart.js')}}"></script>
+   
    
    
     <!-- Jquery -->

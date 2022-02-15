@@ -20,7 +20,8 @@ class Pedidos extends Model
         $query = DB::table('pedido_produto_usuario as ppu')
         ->join('produto as p', 'p.id_produto', '=', 'ppu.id_produto')
         ->join('pedido as pe', 'pe.id_pedido', '=', 'ppu.id_pedido')
-        ->select('*')
+        ->join('usuario as u', 'u.id', '=', 'ppu.id_usuario')
+        ->select('p.*','pe.*')
         ->get();
         return $query;
         

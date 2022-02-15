@@ -4,31 +4,56 @@ class ControllerPedidos {
 
         this.modal = document.getElementById('modal')
         this.body = document.getElementsByTagName('body')
-        this.ajaxShowAllRequest()
+        this.GetAllPedidos()
 
     }
 
-   
 
-    ajaxShowAllRequest() {
+
+    GetAllPedidos() {
 
         // Vai traser todos os dados da tabela
 
-        // $.ajax({
-        //     headers: {
-        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        //     },
-        //     type: "POST",
-        //     url: "url",
-        //     data: "data",
-        //     dataType: "JSON",
-        //     success: dados => {
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            type: "GET",
+            url: "pedidos/clientes",
+            data: "data",
+            dataType: "JSON",
+            success: dados => {
 
-        //     },
-        //     error: erro => {
+                dados.forEach(element => {
 
-        //     }
-        // });
+                    console.log(element)
+
+                    $("#tabela").append(`
+
+                        <tr>
+                            <td>${element['id_pedido']}</td>
+                            <td>${element['nome']}</td>
+                            <td>
+                                <span class="btn btn-primary corpo-action" ><ion-icon  class="incone-action" name="checkmark-circle-outline"></ion-icon></span>
+                                <span class="btn btn-info corpo-action" ><ion-icon class="incone-action" name="color-fill-outline"></ion-icon></span>
+                                <span class="btn btn-success corpo-action" ><ion-icon class="incone-action" name="bicycle-outline"></ion-icon></span>
+                            </td>
+                            <td>
+                                <span onclick="Pedido.ajaxGetRequest('1')"  class="btn btn-outline-danger corpo-action" ><ion-icon class="incone-action" name="resize-outline"></ion-icon></span>
+                            </td>
+                        </tr>
+                        
+                    `);
+
+                });
+
+
+            },
+            error: erro => {
+
+                console.log(erro)
+            }
+        });
 
     }
 

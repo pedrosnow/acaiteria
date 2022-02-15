@@ -30,6 +30,10 @@ Route :: get ('home' , 'HomeController@index');
 
 Route :: get ('complemento/' , 'ComplementoController@index');
 Route :: post ('complemento/cadastrar' , 'ComplementoController@store');
+Route :: post ('complemento/deletar' , 'ComplementoController@destroy');
+Route::get('complemento/getAll', 'ComplementoController@getAll');
+
+
 Route :: get ('produtos/showAll' , 'ProdutoController@showAll');
 Route :: get ('produtos/' , 'ProdutoController@index');
 Route :: post ('produtos/deletar' , 'ProdutoController@deletar');
